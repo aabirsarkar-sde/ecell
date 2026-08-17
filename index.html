@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SUBSTRATE — 100 deep-tech ideas for India</title>
+<meta name="description" content="A field guide to 100 deep-tech companies India hasn't built yet. Ten sectors, ten ideas each, with the buyer, the timing and the hard part named for every one." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&family=Anek+Latin:wdth,wght@75..125,300..800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<a class="skip" href="#index">Skip to the index</a>
+
+<header class="rail" role="banner">
+  <span class="rail__mark">SUBSTRATE</span>
+  <span class="rail__mid">A field guide to 100 deep-tech companies India hasn't built yet</span>
+  <span class="rail__ed">Ed. 01 · Aug 2026</span>
+</header>
+
+<main>
+
+  <!-- ── HERO ───────────────────────────────────────────── -->
+  <section class="hero" aria-labelledby="title">
+    <div class="hero__left">
+      <p class="eyebrow">Ten sectors · Ten ideas each · One country</p>
+      <h1 id="title">
+        <span class="line" data-text="A hundred">A hundred</span>
+        <span class="line" data-text="hard things">hard things</span>
+        <span class="line line--alt" data-text="worth building">worth building</span>
+        <span class="line" data-text="in India">in India</span>
+      </h1>
+      <p class="lede">
+        None of these are apps. Each one needs a lab, a fab, a field season or a decade — and
+        each is written down here the way a founder would need it: what it is, why the timing
+        is specifically Indian, and the part that will actually be hard.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#index">Open the index</a>
+        <button class="btn" type="button" id="deal">Deal me one idea</button>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <!-- SIGNATURE: the 10 × 10 matrix -->
+      <figure class="matrix-wrap">
+        <figcaption class="matrix__cap">
+          <span>The catalogue, entire</span>
+          <span class="mono">10 sectors × 10 ideas</span>
+        </figcaption>
+        <div class="matrix" id="matrix" role="group" aria-label="Grid of all 100 ideas. Each row is a sector, each square an entry."></div>
+        <p class="matrix__key"><b>Capital needed before revenue</b> <i></i>Low <i></i>Med <i></i>High</p>
+        <output class="readout" id="readout" aria-live="polite">
+          <span class="readout__code mono">00.00</span>
+          <span class="readout__body">
+            <span class="readout__name">Hover any square</span>
+            <span class="readout__sector mono">— the row is the sector, the column is the entry</span>
+          </span>
+        </output>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ── CONTROLS ──────────────────────────────────────── -->
+  <div class="controls" id="index">
+    <div class="controls__inner">
+      <div class="chips" id="chips" role="group" aria-label="Filter by sector"></div>
+      <div class="controls__right">
+        <label class="search">
+          <span class="sr">Search the catalogue</span>
+          <input type="search" id="search" placeholder="Search: fab, mandi, battery, ISRO…" autocomplete="off" />
+        </label>
+        <p class="count mono" id="count" aria-live="polite">100 / 100</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CATALOGUE ─────────────────────────────────────── -->
+  <div id="catalogue"></div>
+
+  <p class="empty" id="empty" hidden>Nothing in the catalogue matches that. <button type="button" class="linkish" id="clear">Clear the filters</button></p>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__col">
+      <h2 class="foot__h">How to read an entry</h2>
+      <p>Every idea carries three judgements: who signs the cheque, how much steel it takes before revenue, and how long until a first real customer. The <em>hard part</em> line is the honest one — it names the thing most likely to kill the company, not the thing that sounds impressive in a pitch.</p>
+    </div>
+    <div class="foot__col">
+      <h2 class="foot__h">What this isn't</h2>
+      <p>Not validated businesses, not market research, and not a claim that nobody is working on these. Several have Indian companies in them already; where that's true, the entry points at the part still unbuilt. Treat the catalogue as a set of prompts to argue with.</p>
+    </div>
+    <div class="foot__col">
+      <h2 class="foot__h">The bias in the list</h2>
+      <p>Chosen for one filter: things that are easier, cheaper or only possible to build in India, because of a policy window, a demand pattern, a cost structure or a talent pool that exists here and not elsewhere. Ideas that could be started anywhere were left out.</p>
+    </div>
+  </div>
+  <div class="foot__rule">
+    <span class="mono">SUBSTRATE · EDITION 01</span>
+    <span class="mono">100 ENTRIES · 10 SECTORS</span>
+    <span class="mono">COMPILED AUGUST 2026</span>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
